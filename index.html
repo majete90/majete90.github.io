@@ -1,0 +1,280 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+		<link rel="shortcut icon" href="https://www.google.com/s2/favicons?domain=https://www.vodafone.es/c/particulares/es/">
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<title>Televenta</title>
+		<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+		
+		<style type="text/css">
+	
+			/*Estilo web*/
+				body{
+					background-image:url(imagenes/fondo.gif);
+					background-repeat:repeat;
+					font-family: 'Roboto', sans-serif;
+				}					
+				@font-face {
+					font-family: 'Roboto', sans-serif;
+				}		
+				
+			/*Iconos y animación*/
+				.icon{
+					transition:all 0.2s;
+					-webkit-transition:all 0.2s;
+					-moz-transition:all 0.2s;
+					-o-transition:all 0.2s;
+					-ms-transition:all 0.2s;
+					margin-left:0px;
+				}					
+				.icon:hover{
+					-webkit-transform:scale(1.5,1.5);
+					-moz-transform:scale(1.5,1.5);
+					-o-transform:scale(1.5,1.5);
+					-ms-transform:scale(1.5,1.5);
+					transform:scale(1.5,1.5);
+				}					
+				#iconos ul{
+					list-style-type:none;
+				}
+
+			/*Logo titulo*/					
+				#titulo{
+					height:98px;
+					width:auto;
+					margin:2px auto;
+					background-image:url(data:image/png;base64,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);
+					background-repeat:no-repeat;
+					background-position:center;
+				}
+				
+			/*Caja Whatsapp*/	
+				#whatsapp{
+					height:150px;
+					width:490px;
+					margin:0px auto;
+					text-align:center;
+					border: red 1px solid;
+					border-radius: 20px;
+				}
+				
+			/*Capas mensajes*/
+				#centro{
+					width:1200px;
+					margin:1px auto;
+					text-align: center;
+				}
+				#izq{
+					width:472px;
+					float:left;
+				}
+				#der{
+					width:700px;
+					float:right;
+				}
+				#principal2{
+					font-weight:bold;
+					height:auto;
+					width:386px;
+					margin:0px auto;
+				}	
+	
+		</style>		
+	</head>
+
+	<body>
+	
+		<div id="iconos">
+			<a href="https://catalogo.comunicaciones-vodafone.es/Login" target= "_blank">
+				<img class="icon" src="https://www.vodafone.es/c/statics/maestro/logo_vodafone.png?v=20190708091842" width="48" height="48" hspace="10" border="0" align="right" class="icon03" />
+			</a>
+			<a href="https://distribucion.vodafone.es/Citrix/SamlDistriWeb/" target= "_blank">
+				<img class="icon" src="https://cdn.icon-icons.com/icons2/1381/PNG/512/citrixreceiver_93805.png" width="48" height="48" hspace="10" border="0" align="right" class="i" />
+			</a>
+			<a href="https://retailx.es/" target= "_blank">
+				<img class="icon" src="https://vodafone.topgestion.es/assets/img/logo-retail.svg" width="48" height="48" hspace="10" border="0" align="right" class="i" />
+			</a>
+			<a href="https://smartnotes2.smartretail.eu/48988256" target= "_blank">
+				<img class="icon" src="https://smartnotes2.smartretail.eu/spa/assets/svg/smartnoteslogo.svg" width="98" height="48" hspace="10" border="0" align="right" class="icon03" />
+			</a>
+			<a href="https://forms.office.com/pages/responsepage.aspx?id=yZ7VUaNizUueZbktpyrrF4qQN9Pit_JEoVtEII9Ok_dUOFBZSk5PRUdOQ1pVNE1CNVdITzQ3SFlSRi4u" target= "_blank">
+				<img class="icon" src="https://cdn.forms.office.net/forms/images/favicon.ico" width="48" height="48" hspace="10" border="0" align="right" class="icon03" />
+			</a>
+			
+		</div>
+		
+		<div id="titulo">
+		</div>
+		
+		<div id="whatsapp">
+			<p>&nbsp;</p>	
+			
+			<script>
+				var num = null;
+				//submit
+				function contac(){
+					num = document.getElementById("prod").value;
+					msj = document.getElementById("CVF").value;
+					window.open("https://api.whatsapp.com/send?phone=34"+num+"&text="+encodeURIComponent(msj));
+				};
+				function sub(){
+					num = document.getElementById("prod").value;
+					msj = document.getElementById("nps").value;
+					window.open("https://api.whatsapp.com/send?phone=34"+num+"&text="+encodeURIComponent(msj));
+				};
+				function res(){
+					num = document.getElementById("prod").value;
+					msj = document.getElementById("promo").value;
+					window.open("https://api.whatsapp.com/send?phone=34"+num+"&text="+encodeURIComponent(msj));
+				};
+			</script>
+		
+			<form name="form" action="" method="get">
+				Introduce número: <input type="text" name="prod" id="prod">
+			</form>
+			
+			<button onclick="contac()">
+				Contacto
+			</button>
+			<button onclick="sub()">
+				Mandar NPS
+			</button>
+			<button onclick="res()">
+				Mandar PROMO
+			</button>
+
+		</div>
+		
+	 	<div id="centro">
+		
+			<div id="izq">  				
+				<div id="principal2">
+					<p>&nbsp;</p>
+					<p> MENSAJE NPS </p>
+						
+<!Se escribe el mensaje tal cual quieres que se muestre en la plantilla con espacios y tabulaciones>	
+
+<textarea name="nps" id="nps" rows="30" cols="60">
+					
+Desde el equipo de Vodafone ECI Castellana queremos agradecer tu confianza, mostrándonos como siempre, a tu entera disposición.
+
+Además, informarte que es posible que recibas una llamada desde el 607 103 000 para valorar la atención de Vanessa, Filippo y Miguel en el stand.
+
+Si ha sido satisfactoria, nos sería de gran ayuda que nos puntuaras con un 9 o 10, ya que es la única nota positiva que nos cuenta.
+
+Quedamos a tu disposición para cualquier duda o información que necesites.
+
+Un saludo.
+							
+</textarea>
+<textarea name="CVF" id="CVF" rows="1" cols="60">
+Línea de contacto directo con Vodafone ECI Castellana
+Asesor: Miguel
+</textarea>
+
+					<p>&nbsp;</p>
+					<p>&nbsp;</p>
+					<p>OTROS MENSAJES</p>
+					
+					<textarea name="gestion" id="gestion" rows="30" cols="60">
+
+
+Buenas tardes, soy Miguel, tu asesor Vodafone.
+
+Serielovers: El pack Serielovers incluye todo el contenido del pack Seriefans (HBO España, FOXNOW, AXN Now, 
+asi como canales especialistas en series como TNT, Calle 13, Comedy Central, Cosmo, SYFY, XTRM, FOX, FOX Life, AXN, AXN WHITE y AMC), 
+ademas de Amazon Prime con todas las ventajas de una suscripcion Prime y todo el catalogo de series y peliculas de Prime Video. 
+Y de regalo una variedad de canales como Eurosport 1, TCM, AMC, Disney XD, Canal Cocina, Comedy Central y MTV.
+
+Si quieres disfrutar antes de estos cambios, sin costes añadidos, responde a este mensaje con:
+
+*Acepto* para actualizarte.
+*Rechazo* para cancelar.
+*Más info* para pedir más información.
+
+¡Un saludo!
+
+</textarea>
+				</div>
+			</div>
+			
+			
+			<div id="der">
+				<div id="principal2">
+					<p>&nbsp;</p>
+					<p> MENSAJE PROMO </p>
+							
+<!Se escribe el mensaje tal cual quieres que se muestre en la plantilla con espacios y tabulaciones>	
+
+<textarea name="promo" id="promo" rows="30" cols="60">
+
+Buenas tardes, soy Miguel, tu asesor Vodafone.
+
+*Activa un descuento especial*
+
+Cambia tu tarifa a Vodafone Ilimitada Plus y disfruta de llamadas y datos ILIMITADOS a máxima velocidad 5G
+Quedándose una cuota final de  
+
+*¡No pierdas esta oportunidad irrepetible!*
+
+Además, tienes la oportunidad de añadir más líneas adicionales al 50% de descuento, para siempre.
+
+Responde a este mensaje con:
+
+*Acepto* para activar promoción.
+*Rechazo* para cancelar.
+*Más info* para pedir más información.
+
+¡Un saludo!
+
+</textarea>				
+					<p>&nbsp;</p>
+					<p>&nbsp;</p>
+					<p>&nbsp;</p>
+					
+					<textarea name="wifisuper" id="gestion" rows="30" cols="60">
+
+
+
+*VF INFO*: Pásate a Vodafone con la tarifa BIG YUSER con llamadas ilimitadas, datos ilimitados en RRSS y 15Gb acumulables por 15e/mes
+¡PRECIO DEFINITIVO!
+
+Responde a este mensaje con:
+
+*Acepto* para contratar.
+*Más info* para pedir más información.
+*Rechazo* para no recibir mas comunicaciones.
+
+----
+
+Contrata Vodafone Hogar Ilimitable 2.0 por 100e/mes 
+
+Con:
+- Fibra 600Mb + Fijo ilimitado
+- 2 líneas de movil con llamadas y datos ilimitados a máxima velocidad
+- Super WIfi
+- SecureNet Family
+- Vodafone TV con más de 100 canales temáticos
+- Decodificador 4K
+- HBO 
+- Amazon Prime
+- Disney+
+
+Y, por haber sido cliente, tenemos una oferta exclusiva para ti:
+
+*¡25% DE DESCUENTO DURANTE 12 MESES!*
+
+Responde a este mensaje con:
+
+*ACEPTO* para contratar.
+*INFO* para pedir más información.
+*MÁS* para recibir otras promociones.
+
+</textarea>
+				</div>
+			</div>
+		</div> 
+	
+	</body>
+</html>
